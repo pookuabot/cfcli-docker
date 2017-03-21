@@ -6,7 +6,6 @@ RUN yum update -y && yum install -y epel-release
 
 # install a few packages
 RUN yum install -y git && yum install -y sudo && yum install -y nodejs && \
-  curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash - && \
   yum install -y vim && yum install -y bind-utils && npm install -g cloudflare-cli
 
 # create cfcli config
